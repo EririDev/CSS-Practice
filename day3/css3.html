@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property</title>
+  </head>
+  <style>
+    .kotak {
+      background-color: slateblue;
+      width: 200px;
+      height: 200px;
+      /* border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px; */
+      /* atau */
+      border-radius: 0 20px 0 20px;
+      margin-bottom: 10px;
+    }
+    .kotak1 {
+      background-color: salmon;
+      width: 200px;
+      height: 200px;
+      /* border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px; */
+      /* atau */
+      border-radius: 0 20px 0 20px;
+      opacity: 70%;
+      /* atau bisa pakai 0-1 */
+    }
+    .kotak2 {
+      background-color: rgb(125, 205, 90);
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      /* border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px; */
+      /* atau */
+      border-radius: 0 20px 0 20px;
+      margin-top: 10px;
+      box-shadow: 5px 5px 5px 0;
+      /* inset(optional) x y blur spread(optional) color */
+    }
+    
+    .kotak3 {
+      text-shadow: 0 5px 1px red;
+      /* x y blur */
+    }
+    .kotak4 {
+      background: linear-gradient(to left, rgb(201, 18, 201), blue);
+      /* parameter optional (sudut/arah) */
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      /* border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px; */
+      /* atau */
+      border-radius: 0 20px 0 20px;
+      margin-top: 10px;
+      box-shadow: 5px 5px 5px 0;
+      /* inset(optional) x y blur spread(optional) color */
+    }
+    .kotak5 {
+      background: radial-gradient(rgb(18, 201, 183), rgb(97, 97, 189));
+      /* parameter optional (sudut/arah) */
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      /* border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px; */
+      /* atau */
+      border-radius: 0 20px 0 20px;
+      margin-top: 10px;
+      box-shadow: 5px 5px 5px 0;
+      /* inset(optional) x y blur spread(optional) color */
+      transition: 1s;
+    }
+    .kotak5:hover {
+      transform: scaleY(0.5) rotate(360deg);
+    }
+    .gambar1 {
+      filter: saturate(180%) blur(10px) hue-rotate(10px) contrast(200px)
+        drop-shadow(20px 100px 5px);
+    }
+   h1{
+    transition: 1s;
+    display: inline-block;
+   }
+   h1:hover{
+    transform: rotate(360deg);
+   }
+  </style>
+  <body>
+    <div class="kotak">Border Radius</div>
+    <div class="kotak1">Opacity</div>
+    <div class="kotak2">Box SHadow</div>
+    <div class="kotak3"><h1>Text Shadow</h1></div>
+    <marquee behavior="" direction="">Marquee </marquee>
+    <div class="kotak4">Linear Gradient</div>
+    <div class="kotak5">Radial Gradient</div>
+    <div class="gambar1">
+      <img
+        src="https://images.unsplash.com/photo-1673745963492-32d46cfaf1a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60"
+        alt=""
+      />
+    </div>
+    <h1>WWW</h1>
+  </body>
+</html>

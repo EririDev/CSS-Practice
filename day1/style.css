@@ -54,7 +54,7 @@ body {
     color: #333;
 }
 nav{
-    width: 800px;
+    width: 120vh;
     margin: auto;
     background: url(/foto/background.jpg);
     background-size: cover;
@@ -109,7 +109,7 @@ nav h1 span{
 }
 
 main{
-    width: 800px;
+    width: 120vh;
     height: 400px;
     margin: auto;
     background-color: rgb(40, 44, 61);
@@ -170,7 +170,7 @@ main a{
 
 
 footer{
-    width: 720px;
+    width: 105vh;
     height: 1000px;
     margin: auto;
     background-color:  rgb(60, 64, 82);
