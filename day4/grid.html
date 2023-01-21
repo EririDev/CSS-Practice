@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-Practice</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+      }
+      .container {
+        display: grid;
+        width: 50%;
+        margin: auto;
+        border: 3px solid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 100px);
+        grid-template-areas:
+          "header header header"
+          "sidebar content content"
+          "sidebar content content"
+          "footer footer footer";
+        gap: 10px;
+        /* column-gap: 20px;
+          row-gap: 20px; */
+        /* place-content: jus,alig; */
+      }
+      header {
+        grid-area: header;
+        background-color: blueviolet;
+      }
+      aside {
+        grid-area: sidebar;
+        background-color: slateblue;
+      }
+      main {
+        grid-area: content;
+        background-color: goldenrod;
+      }
+      footer {
+        grid-area: footer;
+        background-color: palevioletred;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="box">Header</header>
+      <aside class="box">Side Bar</aside>
+      <main class="box">Content</main>
+      <footer class="box">Footer</footer>
+    </div>
+    <div class="container-2">.</div>
+  </body>
+</html>
